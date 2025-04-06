@@ -25,16 +25,19 @@ MainPage::MainPage()
 {
     InitializeComponent();
 
-    // 共通リスト項目を定義
+    // 共通リスト項目
     auto items = ref new Platform::Collections::Vector<Platform::String^>();
     items->Append("リスト1");
     items->Append("リスト2");
     items->Append("リスト3");
 
-    // 各ドロップダウンに同じリストを追加
-    Dropdown1->ItemsSource = items;
-    Dropdown2->ItemsSource = items;
-    Dropdown3->ItemsSource = items;
+    // ドロップダウンを配列にまとめる
+    dropdowns = { Dropdown1, Dropdown2, Dropdown3 };
+
+    for (auto comboBox : dropdowns)
+    {
+        comboBox->ItemsSource = items;
+    }
 }
 
 void MainPage::OnDropdownSelectionChanged(Object^ sender, SelectionChangedEventArgs^ e)

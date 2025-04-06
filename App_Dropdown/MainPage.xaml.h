@@ -14,9 +14,10 @@ namespace App_Dropdown
 	/// </summary>
 	public ref class MainPage sealed
 	{
+	private:
+		std::vector<Windows::UI::Xaml::Controls::ComboBox^> dropdowns;
 	public:
 		MainPage();
 		void OnDropdownSelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^ e);
-
 	};
 }
