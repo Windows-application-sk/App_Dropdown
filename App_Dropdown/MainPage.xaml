@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="App_Dropdown.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App_Dropdown"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Spacing="20">
+            <ComboBox x:Name="Dropdown1" Width="150" Header="ドロップダウン1" SelectionChanged="OnDropdownSelectionChanged"/>
+            <ComboBox x:Name="Dropdown2" Width="150" Header="ドロップダウン2" SelectionChanged="OnDropdownSelectionChanged"/>
+            <ComboBox x:Name="Dropdown3" Width="150" Header="ドロップダウン3" SelectionChanged="OnDropdownSelectionChanged"/>
+        </StackPanel>
+    </Grid>
+</Page>
