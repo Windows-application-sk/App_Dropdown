@@ -1,7 +1,7 @@
 # App_Dropdown
 
 ドロップダウンを使ったサンプルプログラムです。
-<img width="958" alt="App_Dropdown" src="https://github.com/user-attachments/assets/f268822f-5403-411b-aadb-4e7479fcfa29" />
+<img width="958" alt="App_Dropdown" src="https://github.com/user-attachments/assets/e6e06fa5-2113-4b1a-b860-5a34b0152511" />
 
 ## サンプル構成
 * ドロップダウンは3個あり、それぞれドロップダウン1,ドロップダウン2,ドロップダウン3と定義する。
