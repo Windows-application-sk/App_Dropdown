@@ -35,9 +35,7 @@ MainPage::MainPage()
     dropdowns = { Dropdown1, Dropdown2, Dropdown3 };
 
     for (auto comboBox : dropdowns)
-    {
         comboBox->ItemsSource = items;
-    }
 }
 
 void MainPage::OnDropdownSelectionChanged(Object^ sender, SelectionChangedEventArgs^ e)
